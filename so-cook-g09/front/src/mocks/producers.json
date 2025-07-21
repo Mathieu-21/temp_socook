@@ -1,0 +1,45 @@
+[
+  {
+    "id_seller": 1,
+    "profile_image": "https://randomuser.me/api/portraits/men/1.jpg",
+    "product_images": [
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80"
+    ],
+    "seller_name": "Jardin de Léo",
+    "latitude": 48.8566,
+    "longitude": 2.3522,
+    "average_seller_rate": 4.7,
+    "product_price": 6.5,
+    "product_description": "Délicieuse tarte tomates & basilic du jardin.",
+    "product_title": "Tarte tomates & basilic"
+  },
+  {
+    "id_seller": 2,
+    "profile_image": "https://randomuser.me/api/portraits/women/2.jpg",
+    "product_images": [
+      "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80"
+    ],
+    "seller_name": "Le Gourmet Local",
+    "latitude": 48.8666,
+    "longitude": 2.3622,
+    "average_seller_rate": 4.3,
+    "product_price": 9.0,
+    "product_description": "Tarte aux pommes maison.",
+    "product_title": "Tarte aux pommes"
+  },
+  {
+    "id_seller": 3,
+    "profile_image": "https://randomuser.me/api/portraits/men/3.jpg",
+    "product_images": [
+      "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80"
+    ],
+    "seller_name": "La Table de Jeanne",
+    "latitude": 48.8466,
+    "longitude": 2.3422,
+    "average_seller_rate": 4.9,
+    "product_price": 12.0,
+    "product_description": "Gratin dauphinois traditionnel.",
+    "product_title": "Gratin dauphinois"
+  }
+]
+

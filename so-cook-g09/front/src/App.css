@@ -1,0 +1,3 @@
+/* Styles spécifiques à l'application */
+/* Les styles principaux sont gérés par Tailwind CSS */
+@import 'leaflet/dist/leaflet.css';

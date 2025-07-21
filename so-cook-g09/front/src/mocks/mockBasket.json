@@ -1,0 +1,22 @@
+[
+  {
+    "id_product_basket": 1,
+    "id_product": 101,
+    "id_seller": 42,
+    "product_title": "Abricots frais du Roussillon",
+    "product_description": "Un lot de 1kg d'abricots mûrs à point.",
+    "product_price": 4.5,
+    "product_seller_name": "Domaine du Soleil",
+    "product_seller_address": "15 route de la Mer, 66200 Elne"
+  },
+  {
+    "id_product_basket": 2,
+    "id_product": 102,
+    "id_seller": 43,
+    "product_title": "Confiture artisanale de fraise",
+    "product_description": "Pot de 250g, 100% naturel.",
+    "product_price": 3.8,
+    "product_seller_name": "Les Délices de Jeanne",
+    "product_seller_address": "4 impasse des Jardins, 66100 Perpignan"
+  }
+]

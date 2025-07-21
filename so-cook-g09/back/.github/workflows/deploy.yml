@@ -1,0 +1,28 @@
+name: Deploy Backend to VM
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Deploy backend via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VM_HOST }}
+          username: ${{ secrets.VM_USER }}
+          key: ${{ secrets.VM_SSH_KEY }}
+          script: |
+            cd /home/${{ secrets.VM_USER }}/so-cook-back
+            git pull origin main
+            tsc --noEmit
+            docker build -t backend .
+            docker stop backend || true
+            docker rm backend || true
+            docker run -d --restart always -p 3000:3000 --name backend backend

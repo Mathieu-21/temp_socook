@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+  backend:
+    build:
+      context: ./back
+    container_name: so-cook_back
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - JWT_SECRET=dev_jwt_secret_key_change_in_production_123456789
+      - PEPPER=dev_pepper_salt_change_in_production_987654321
+    restart: unless-stopped
+    
+  frontend:
+    build: ./front
+    container_name: so-cook_front
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
